@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TheBitcoinStrategy.com — Domain Proposal</title>
+  <meta name="description" content="The clean, no-hyphen domain TheBitcoinStrategy.com is privately owned and offered in a goodwill trade to Gerhard of Bitcoin Strategy. This is not the official website." />
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --bg-card: #121820;
+      --bg-elevated: #181f29;
+      --border: #243041;
+      --text: #e8eef6;
+      --text-muted: #8b9bb4;
+      --accent: #3b82f6;
+      --accent-soft: rgba(59, 130, 246, 0.12);
+      --accent-hover: #60a5fa;
+      --success: #34d399;
+      --warning: #fbbf24;
+      --radius: 12px;
+      --max: 720px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 15, 20, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 20px;
+    }
+    .header-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+    .logo span {
+      color: var(--accent);
+    }
+    .badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--warning);
+      background: rgba(251, 191, 36, 0.12);
+      border: 1px solid rgba(251, 191, 36, 0.35);
+      padding: 4px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .header-link {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Disclaimer bar */
+    .disclaimer-bar {
+      background: #1a1208;
+      border-bottom: 1px solid rgba(251, 191, 36, 0.25);
+      padding: 12px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #fde68a;
+      line-height: 1.5;
+    }
+    .disclaimer-bar strong {
+      color: #fef3c7;
+    }
+
+    /* Main */
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 5vw, 2.4rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .hero h1 .domain {
+      color: var(--accent);
+    }
+    .hero-sub {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 540px;
+      margin: 0 auto 28px;
+    }
+    .hero-note {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      text-align: left;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 56px;
+    }
+    h2 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    p {
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+    .muted {
+      color: var(--text-muted);
+    }
+
+    /* Comparison cards */
+    .compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin: 24px 0;
+    }
+    @media (max-width: 560px) {
+      .compare {
+        grid-template-columns: 1fr;
+      }
+    }
+    .compare-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .compare-card.highlight {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+    }
+    .compare-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .compare-domain {
+      font-weight: 700;
+      font-size: 1.05rem;
+      word-break: break-all;
+    }
+    .compare-card.highlight .compare-domain {
+      color: var(--accent);
+    }
+
+    /* Value cards */
+    .value-grid {
+      display: grid;
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .value-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 20px;
+    }
+    .value-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .value-card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .value-card li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 8px;
+      color: var(--text);
+      font-size: 0.97rem;
+    }
+    .value-card li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* Linkfo box */
+    .linkfo-box {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 22px;
+      margin-top: 12px;
+    }
+    .linkfo-box h3 {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
+    .linkfo-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--success);
+      background: rgba(52, 211, 153, 0.12);
+      border: 1px solid rgba(52, 211, 153, 0.3);
+      padding: 3px 8px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+
+    /* Credibility */
+    .cred {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      font-size: 0.97rem;
+      color: var(--text-muted);
+    }
+
+    /* CTA note */
+    .cta-note {
+      text-align: center;
+      background: var(--accent-soft);
+      border: 1px solid rgba(59, 130, 246, 0.35);
+      border-radius: var(--radius);
+      padding: 22px 20px;
+      margin-top: 32px;
+    }
+    .cta-note p {
+      margin-bottom: 0;
+      color: var(--text);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 20px 48px;
+      text-align: center;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    footer .strong-disclaimer {
+      background: #1a1208;
+      border: 1px solid rgba(251, 191, 36, 0.3);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      margin-bottom: 20px;
+      color: #fde68a;
+      font-size: 0.9rem;
+    }
+    footer .strong-disclaimer strong {
+      color: #fef3c7;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">The<span>Bitcoin</span>Strategy.com</div>
+      <div class="badge">Not the official site</div>
+      <a class="header-link" href="https://the-bitcoin-strategy.com/" target="_blank" rel="noopener">Official site →</a>
+    </div>
+  </header>
+
+  <div class="disclaimer-bar">
+    <strong>Important:</strong> This is <strong>not</strong> the official Bitcoin Strategy website.
+    The official site is <a href="https://the-bitcoin-strategy.com/" target="_blank" rel="noopener" style="color:#fde68a;text-decoration:underline;">the-bitcoin-strategy.com</a>.
+    This domain is privately owned and is being offered in a goodwill trade.
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>The clean domain for<br><span class="domain">Bitcoin Strategy</span></h1>
+      <p class="hero-sub">
+        www.TheBitcoinStrategy.com — no hyphens, easier to say, easier to remember, stronger brand equity.
+      </p>
+      <div class="hero-note">
+        I’ve been a YouTube subscriber for around two years and recently joined the free Telegram community.
+        I acquired this domain because it is the natural, premium version of the brand name.
+        I’m offering a clean, permanent transfer of ownership in exchange for a simple, mutually beneficial arrangement.
+      </div>
+    </section>
+
+    <!-- WHY THE DOMAIN MATTERS -->
+    <section>
+      <h2>Why this domain matters</h2>
+      <p class="muted">A side-by-side look at the two versions of the name:</p>
+
+      <div class="compare">
+        <div class="compare-card">
+          <div class="compare-label">Current</div>
+          <div class="compare-domain">the-bitcoin-strategy.com</div>
+        </div>
+        <div class="compare-card highlight">
+          <div class="compare-label">Proposed</div>
+          <div class="compare-domain">TheBitcoinStrategy.com</div>
+        </div>
+      </div>
+
+      <ul style="list-style:none;padding:0;margin-top:8px;">
+        <li style="padding:6px 0;color:var(--text-muted);">• Easier to say out loud and type from memory</li>
+        <li style="padding:6px 0;color:var(--text-muted);">• Cleaner on business cards, bios, and spoken mentions</li>
+        <li style="padding:6px 0;color:var(--text-muted);">• Stronger professional perception for a serious brand</li>
+        <li style="padding:6px 0;color:var(--text-muted);">• Removes the visual and verbal friction of hyphens</li>
+      </ul>
+    </section>
+
+    <!-- VALUE EXCHANGE -->
+    <section id="proposal">
+      <h2>Proposed value exchange</h2>
+      <p>
+        I’m happy to transfer full ownership of <strong>TheBitcoinStrategy.com</strong> to you permanently.
+        No redirects, no shared control, no ongoing DNS arrangements — just a clean hand-off so the better domain becomes yours.
+      </p>
+      <p class="muted" style="margin-bottom:24px;">
+        In return, I’m looking for a straightforward package that reflects the long-term value of the domain:
+      </p>
+
+      <div class="value-grid">
+        <div class="value-card">
+          <h3>1. What you receive</h3>
+          <ul>
+            <li>Permanent, full ownership transfer of TheBitcoinStrategy.com</li>
+            <li>Clean technical hand-off (registrar transfer, no residual control on my side)</li>
+            <li>The stronger, no-hyphen brand domain ready for immediate use</li>
+          </ul>
+        </div>
+
+        <div class="value-card">
+          <h3>2. What I’m requesting</h3>
+          <ul>
+            <li><strong>Lifetime Premium membership</strong> (or multi-year equivalent) to the Bitcoin Strategy community</li>
+            <li>Optional: if the clean domain is later used in marketing and can be shown to drive new Premium subscribers, a modest performance-based commission (details to agree)</li>
+            <li>A light partnership around <strong>Linkfo.me</strong> (details below) — this is the part that creates ongoing strategic value for both sides</li>
+          </ul>
+        </div>
+      </div>
+
+      <p style="margin-top:20px;font-size:0.95rem;color:var(--text-muted);">
+        Everything is flexible. The goal is a clean, fair exchange that feels good on both sides.
+      </p>
+    </section>
+
+    <!-- LINKFO -->
+    <section>
+      <h2>About Linkfo</h2>
+      <div class="linkfo-box">
+        <div class="linkfo-tag">Built with Dirk</div>
+        <h3>Linkfo.me — a smarter alternative to Linktree</h3>
+        <p>
+          Linkfo combines a beautiful, lightning-fast link landing page with <strong>Linkfo Agent</strong> — an AI-powered assistant that adds advanced customization, deeper analytics, monetization tools, and smart automation.
+        </p>
+        <p>
+          One upcoming feature is particularly relevant for a channel like yours: it can ingest the transcript of each YouTube video, store that as persistent context inside a Linkfo profile, and help prepare ready-to-post X content. The result is higher engagement with less manual work.
+        </p>
+        <p style="margin-bottom:0;">
+          Live example: <a href="https://linkfo.me/cern" target="_blank" rel="noopener">linkfo.me/cern</a><br>
+          Main site: <a href="https://www.linkfo.me" target="_blank" rel="noopener">www.linkfo.me</a>
+        </p>
+      </div>
+
+      <p style="margin-top:20px;font-size:0.95rem;color:var(--text-muted);">
+        As part of the domain trade I’d simply ask that you:
+      </p>
+      <ul style="list-style:none;padding:0;margin-top:8px;">
+        <li style="padding:5px 0;color:var(--text);">• Create a Linkfo profile for the Bitcoin Strategy brand once we’re in public rollout</li>
+        <li style="padding:5px 0;color:var(--text);">• Update the X/Twitter bio to feature the Linkfo link</li>
+        <li style="padding:5px 0;color:var(--text);">• Give a public shout-out when the timing feels right</li>
+        <li style="padding:5px 0;color:var(--text);">• Act as a top source of feedback during open beta</li>
+      </ul>
+    </section>
+
+    <!-- CREDIBILITY -->
+    <section>
+      <h2>A quick note on who I am</h2>
+      <div class="cred">
+        Long-time YouTube subscriber (≈2 years) · Recently joined the free Telegram community.<br><br>
+        I respect the transparent, data-driven approach you’ve built and the public track record. This is simply an offer from someone who already follows the work and sees clear brand upside in the cleaner domain.
+      </div>
+    </section>
+
+    <!-- CLOSING -->
+    <div class="cta-note">
+      <p>
+        Happy to discuss the exact terms once you’ve had a look.<br>
+        No pressure, no urgency — just a clean opportunity when the timing is right.
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="strong-disclaimer">
+      <strong>Final reminder:</strong> This website is <strong>not</strong> affiliated with, endorsed by, or operated by Gerhard or Bitcoin Strategy.
+      The official website remains <a href="https://the-bitcoin-strategy.com/" target="_blank" rel="noopener" style="color:#fde68a;text-decoration:underline;">the-bitcoin-strategy.com</a>.
+      This page exists solely to present a domain-ownership proposal.
+    </div>
+    <p>
+      TheBitcoinStrategy.com is a privately held domain offered in goodwill.<br>
+      © 2026 · All rights to the domain remain with the current owner until transfer.
+    </p>
+  </footer>
+
+</body>
+</html>
